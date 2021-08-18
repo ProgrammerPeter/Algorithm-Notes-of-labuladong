@@ -4,7 +4,7 @@
 
 只要涉及递归的问题，基本上都是树的问题。
 
-```c++
+```
 void traverse(TreeNode root) {
     // 前序遍历
     traverse(root.left);
@@ -25,7 +25,7 @@ void traverse(TreeNode root) {
     - 每个状态下有什么“选择”？
     - 如何定义`dp`数组/函数来表示“状态”和“选择”？
 
-```python
+```
 # 初始化base case
 dp[0][0][...] = base case
 # 进行状态转移
@@ -37,7 +37,7 @@ for 状态1 in 状态1的所有取值：
 
 ## 回溯算法
 
-```python
+```
 result = []
 def backtrack(路径, 选择列表):
     if 满足结束条件：
@@ -57,7 +57,7 @@ def backtrack(路径, 选择列表):
  
 ## BFS算法
 
-```c++
+```
 // 计算从起点start到终点target的最短距离
 int BFS(Node start, Node target) {
     Queue<Node> q; // 核心数据结构
@@ -114,7 +114,7 @@ int BFS(Node start, Node target) {
 
 ## 二分搜索算法
 
-```c++
+```
 int binary_search(int[] nums, int target) {
     int left = 0, right = nums.length - 1;
     while (left <= right) {
@@ -133,7 +133,7 @@ int binary_search(int[] nums, int target) {
 }
 ```
 
-```c++
+```
 int left_bound(int[] nums, int target) {
     int left = 0, right = nums.length - 1;
     while (left <= right) {
@@ -154,7 +154,7 @@ int left_bound(int[] nums, int target) {
 }
 ```
 
-```c++
+```
 int right_bound(int[] nums, int target) {
     int left = 0, right = nums.length - 1;
     while (left <= right) {
@@ -177,7 +177,7 @@ int right_bound(int[] nums, int target) {
 
 ## 滑动窗口算法
 
-```c++
+```
 /* 滑动窗口算法框架 */
 void slidingWindow(string s, string t) {
     unordered_map<char, int> need, window;
